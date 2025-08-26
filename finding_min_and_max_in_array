@@ -1,0 +1,13 @@
+#User function Template for python3
+#User function Template for python3
+
+class Solution:
+    def get_min_max(self, arr):
+        v=arr[0]
+        k=arr[0]
+        for num in arr:
+            if num<v:
+                v=min(v,num)
+            if num>k:
+                k=max(k,num)
+        return v,k
