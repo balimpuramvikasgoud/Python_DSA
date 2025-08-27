@@ -1,0 +1,13 @@
+arr = [10, 4, 3, 50, 23, 90]
+n=len(arr)
+right=0
+left=n-1
+while left>right:
+    temp=arr[right]
+    arr[right]=arr[left]
+    arr[left]=temp
+    right+=1
+    left-=1
+print(arr)
+    
+        
