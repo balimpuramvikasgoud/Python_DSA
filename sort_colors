@@ -1,0 +1,12 @@
+def sortcolors(arr):
+    c,l,r=0,0,len(arr)-1
+    while c<=r:
+        if arr[c]==0:
+            arr[c],arr[l]=arr[l],arr[c]
+            c+=1
+            l+=1
+        elif arr[c]==1:
+            c+=1
+        else:
+            arr[c],arr[r]=arr[r],arr[c]
+            r-=1
