@@ -1,0 +1,8 @@
+class Solution:    
+    def findUnion(self, a, b):
+        freq={}
+        for x in a:
+            freq[x]=1
+        for y in b:
+            freq[y]=1
+        return list(freq.keys())
